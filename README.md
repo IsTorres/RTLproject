@@ -1,4 +1,4 @@
-### Termos de acordo
+<!-- ### Termos de acordo
 
 Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
 
@@ -8,10 +8,10 @@ Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora
 
 Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir deste repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
 
-# Sumário
+# Sumário -->
 
-  - [Habilidades](#habilidades)
-  - [Entregáveis](#entregáveis)
+<!--   - [Habilidades](#habilidades) -->
+<!--   - [Entregáveis](#entregáveis)
     - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
     - [Desenvolvimento](#desenvolvimento)
     - [Data de entrega](#data-de-entrega)
@@ -60,8 +60,9 @@ Lembre-se que você pode consultar nosso conteúdo sobre
 [Git & GitHub](https://course.betrybe.com/intro/git/) sempre que precisar!
 
 ## O que deverá ser desenvolvido
-
+ 
 Nesse projeto você escreverá testes para uma aplicação React.
+
 
 ## Desenvolvimento
 
@@ -75,16 +76,44 @@ Este repositório já contém uma aplicação React criada e configurada. Após 
 # Instruções para entregar seu projeto
 
 ### Antes de começar a desenvolver:
+-->
+## Para rodar o projeto:
 
 1. Clone o repositório
-  * `git clone https://github.com/tryber/sd-010-b-project-react-testing-library.git`.
+  * `git clone https://github.com/istorres/RTLproject.git`.
   * Entre na pasta do repositório que você acabou de clonar:
-    * `cd sd-010-b-project-react-testing-library`
+    * `cd RTLproject`
 
-2. Instale as dependências
+2. Instale as dependências:
   * `npm install`
 
-3. Crie uma branch a partir da branch `master`
+3. Rode o comando para iniciar a aplicação:
+  * `npm start`
+
+## Testes
+
+  - Haverá uma pasta chamada `./stryker` com diversos arquivos `nomeArquivo.conf.json`. Cada um deles é a configuração do avaliador para um requisito e ela **não deve ser alterada**. Rode o comando `npx stryker run ./stryker/nomeDoArquivo.conf.json` para testar aquele arquivo individualmente.
+
+## Linter
+
+  Para garantir a qualidade do código, vamos utilizar neste projeto os linters `ESLint` e `StyleLint`.
+  Assim o código estará alinhado com as boas práticas de desenvolvimento, sendo mais legível
+  e de fácil manutenção! Para rodá-los localmente no projeto, execute os comandos abaixo:
+
+  ```bash
+    npm run lint
+    npm run lint:styles
+  ```
+## Lista de requisitos
+ - [1. Teste o componente `<App.js />`](#1-teste-o-componente-appjs-)
+ - [2. Teste o componente `<About.js />`](#2-teste-o-componente-aboutjs-)
+ - [3. Teste o componente `<FavoritePokemons.js />`](#3-teste-o-componente-favoritepokemonsjs-)
+ - [4. Teste o componente `<NotFound.js />`](#4-teste-o-componente-notfoundjs-)
+ - [5. Teste o componente `<Pokedex.js />`](#5-teste-o-componente-pokedexjs-)
+ - [6. Teste o componente `<Pokemon.js />`](#6-teste-o-componente-pokemonjs-)
+ - [7. Teste o componente `<PokemonDetails.js />`](#7-teste-o-componente-pokemondetailsjs-)
+
+<!-- 3. Crie uma branch a partir da branch `master`
   * Verifique que você está na branch `master`
     * Exemplo: `git branch`
   * Se não estiver, mude para a branch `master`
@@ -129,7 +158,7 @@ test('shows the Pokédex when the route is `/`', () => {
   * Clique no botão verde _"Create pull request"_
   * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
   * **Não se preocupe em preencher mais nada por enquanto!**
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-010-b-project-react-testing-library/pulls) e confira que o seu _Pull Request_ está criado
+  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-010-b-project-react-testing-library/pulls) e confira que o seu _Pull Request_ está criado 
 
 ---
 
@@ -204,8 +233,15 @@ Todos os arquivos de teste que vocês usarão **já estão previamente criados e
 
 É importante tentar realizar todos os testes de cada requisito a seguir, pois eles são relevantes para os cenários apresentados e vão colocar em prática os conhecimentos de RTL que você adquiriu até aqui! :) Observe que nem todos os testes são contemplados em sua totalidade pelo avaliador, mas a sua implementação garante a aprovação no requisito.
 
-## Lista de requisitos
 
+## Lista de requisitos
+ - [1. Teste o componente `<App.js />`](#1-teste-o-componente-appjs-)
+      - [2. Teste o componente `<About.js />`](#2-teste-o-componente-aboutjs-)
+      - [3. Teste o componente `<FavoritePokemons.js />`](#3-teste-o-componente-favoritepokemonsjs-)
+      - [4. Teste o componente `<NotFound.js />`](#4-teste-o-componente-notfoundjs-)
+      - [5. Teste o componente `<Pokedex.js />`](#5-teste-o-componente-pokedexjs-)
+      - [6. Teste o componente `<Pokemon.js />`](#6-teste-o-componente-pokemonjs-)
+      - [7. Teste o componente `<PokemonDetails.js />`](#7-teste-o-componente-pokemondetailsjs-)
 ### 1. Teste o componente `<App.js />`
 
   - Teste se a página principal da Pokédex é renderizada ao carregar a aplicação no caminho de URL `/`.
